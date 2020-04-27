@@ -7,10 +7,9 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/etEmail"
+        android:id="@+id/edt_user_name"
         android:layout_width="163dp"
         android:layout_height="49dp"
-        android:layout_below="@+id/etName"
         android:layout_marginStart="24dp"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="44dp"
@@ -21,31 +20,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etName"
+        android:id="@+id/edt_pin"
         android:layout_width="145dp"
         android:layout_height="49dp"
-        android:layout_alignStart="@+id/etEmail"
-        android:layout_alignLeft="@+id/etEmail"
         android:layout_alignParentTop="true"
         android:ems="10"
         android:hint="PIN"
         android:inputType="numberPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_user_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toEndOf="@+id/etEmail"
-        app:layout_constraintTop_toTopOf="@+id/etEmail" />
+        app:layout_constraintHorizontal_bias="0.721"
+        app:layout_constraintStart_toEndOf="@+id/edt_user_name"
+        app:layout_constraintTop_toTopOf="@+id/edt_user_name" />
 
     <Button
-        android:id="@+id/btnSave"
+        android:id="@+id/btn_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
+        android:layout_marginTop="36dp"
         android:text="Login"
-        app:layout_constraintEnd_toEndOf="@+id/etName"
-        app:layout_constraintHorizontal_bias="0.543"
-        app:layout_constraintStart_toStartOf="@+id/etEmail"
-        tools:layout_editor_absoluteY="131dp" />
-    
+        app:layout_constraintEnd_toEndOf="@+id/edt_user_name"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="@+id/edt_pin"
+        app:layout_constraintTop_toBottomOf="@+id/edt_user_name" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

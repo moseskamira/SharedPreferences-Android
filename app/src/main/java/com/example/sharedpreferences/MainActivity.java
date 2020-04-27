@@ -2,6 +2,7 @@ package com.example.sharedpreferences;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -49,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void goToHomePage() {
+        Intent homeIntent = new Intent(this, Home.class);
+        startActivity(homeIntent);
 
     }
 }

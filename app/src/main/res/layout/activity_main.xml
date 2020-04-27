@@ -15,7 +15,6 @@
         android:layout_marginTop="44dp"
         android:ems="10"
         android:hint="UserName"
-        android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -47,6 +47,5 @@
         app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="@+id/etEmail"
         tools:layout_editor_absoluteY="131dp" />
-
-
+    
 </androidx.constraintlayout.widget.ConstraintLayout>
